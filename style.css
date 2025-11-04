@@ -80,7 +80,7 @@ li {
     cursor: pointer;
     border: 0;
     width: 100%;
-    
+
     background-color: var(--link-color);
     color: var(--link-text-color);
     text-align: center;
@@ -102,18 +102,14 @@ li {
     border-radius: 0.5rem;
 }
 
-.card__image {
-    overflow: hidden;
+.card__image img {
+    margin-inline: auto;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    height: auto;
+    border-radius: 50%;
     margin-block-end: var(--space-300);
-    display: flex;
-    justify-content: center;
-
-    img {
-        object-fit: cover;
-        width: 80px;
-        height: auto;
-        border-radius: 50%;
-    }
 }
 
 .card__content {
