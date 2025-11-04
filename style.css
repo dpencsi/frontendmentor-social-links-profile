@@ -129,3 +129,10 @@ ul[role="list"] {
     background-color: var(--green);
     color: var(--grey-900);
 }
+
+@media (min-width: 450px) {
+    .card {
+        width: 375px;
+        padding: var(--space-500);
+    }
+}
