@@ -72,6 +72,29 @@ li {
     padding-inline: var(--space-400);
 }
 
+.button {
+    --link-color: var(--grey-700);
+    --link-text-color: var(--white);
+
+    display: block;
+    cursor: pointer;
+    border: 0;
+    width: 100%;
+    
+    background-color: var(--link-color);
+    color: var(--link-text-color);
+    text-align: center;
+    padding-block: var(--space-200);
+    border-radius: 0.5rem;
+    font-weight: var(--font-weight-lg);
+
+    &:hover,
+    &:focus {
+        --link-color: var(--green);
+        --link-text-color: var(--grey-900);
+    }
+}
+
 .card {
     width: 100%;
     background-color: var(--grey-800);
@@ -113,21 +136,6 @@ ul[role="list"] {
     display: flex;
     flex-direction: column;
     gap: var(--space-200);
-}
-
-.card__links li a {
-    display: block;
-    background-color: var(--grey-700);
-    text-align: center;
-    padding-block: var(--space-200);
-    border-radius: 0.5rem;
-    font-weight: var(--font-weight-md);
-    /* transition: all 0.2s ease-in; */
-}
-
-.card__links li a:hover {
-    background-color: var(--green);
-    color: var(--grey-900);
 }
 
 @media (min-width: 450px) {
